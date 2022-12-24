@@ -7,25 +7,26 @@ using System.Threading.Tasks;
 
 namespace T2203E_CSharp.session1
 {
-    internal class Human
+    public class Human
     {
-        public string name;
-        public int age;
+        private string name;
+        private int age;
+
         private int id;
+
         public static int xyz;
+
         public Human()
         {
 
         }
-        public void Run()
-        {
-            Console.WriteLine("Running....");
-            this.name = "Pham Duy Hung";
-        }
-        public void Run(string s)
-        {
 
+        public Human(string s)
+        {
+            this.name = s;
         }
+
+
         public int Id
         {
             get { return this.id; }
@@ -35,7 +36,7 @@ namespace T2203E_CSharp.session1
         public string Name
         {
             get => name;
-            set => name = value; // giong o tren
+            set => name = value;
         }
 
         public int Age
@@ -43,14 +44,28 @@ namespace T2203E_CSharp.session1
             get => age;
             set => age = value;
         }
-        public static void ScreenShot()
+
+        public string Email { get; set; }
+
+        public void Run()
+        {
+            Console.WriteLine("Running....");
+            this.name = "Do Van Thang";
+        }
+
+        public void Run(string s)
+        {
+            // viet gi thi viet
+        }
+
+        public void ScreenShot()
         {
 
         }
-        public void Eat()
+
+        public virtual void Eat()
         {
 
         }
-
     }
 }
