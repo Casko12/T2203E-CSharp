@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace T2203E_CSharp.PracticeExam.Exercise2
 {
-    internal class Tiger
+    public class Tiger : Animal
     {
+        public Tiger() {}
+        
+        public override void Show()
+        {
+            
+        }
+        public override void SetMe(int weight, string name)
+        {
+            Name = "Tiger";
+            Weight = 100;
+        }
     }
 }
