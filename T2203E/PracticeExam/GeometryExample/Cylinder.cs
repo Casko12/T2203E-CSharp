@@ -12,9 +12,9 @@ namespace T2203E_CSharp.PracticeExam.GeometryExample
         public Cylinder() { }
         
         public float BaseArea { get; set; }
-        public float Radius { get; set; }
+        public double Radius { get; set; }
         public float LateralArea { get; set; }
-        public float Height { get; set; }
+        public double Height { get; set; }
         public float TotalArea { get; set; }
         public float Volume { get; set; }
 
@@ -32,9 +32,19 @@ namespace T2203E_CSharp.PracticeExam.GeometryExample
 
         public void Result()
         {
+            Console.WriteLine("Enter the dimensions of the cylinder");
+            double Radius = Convert.ToDouble(Console.ReadLine());
+            double Height = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Radius : " +Radius);
+            Console.WriteLine("Height : " +Height);
+            Console.WriteLine("Cylinder Characteristics");
+            Console.WriteLine("Radius : " +Radius + "Height : " +Height);
+            Console.WriteLine("Base: " +BaseArea);
+            Console.WriteLine("Lateral: " +LateralArea);
+            Console.WriteLine("Total: " +TotalArea);
+            Console.WriteLine("Volume: " +Volume);
 
         }
-
 
     }
 }
