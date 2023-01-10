@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <Folder Include="Assignment3\" />
-    <Folder Include="PracticeExam\Exercise2\" />
   </ItemGroup>
 
   <ItemGroup>
